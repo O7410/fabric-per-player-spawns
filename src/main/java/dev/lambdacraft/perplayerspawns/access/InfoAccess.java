@@ -1,14 +1,15 @@
 package dev.lambdacraft.perplayerspawns.access;
 
-import dev.lambdacraft.perplayerspawns.util.PlayerMobCountMap;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.math.ChunkPos;
-import net.minecraft.world.chunk.WorldChunk;
 
 public interface InfoAccess {
-    void setChunkManager(ServerChunkManagerMixinAccess chunkManager);
-    PlayerMobCountMap getPlayerMobCountMap();
-    void incrementPlayerMobCount(ServerPlayerEntity playerEntity, SpawnGroup spawnGroup);
-    int isBelowChunkCap(SpawnGroup group, ChunkPos chunk);
+    void fabric_per_player_spawns$setChunkManager(ServerChunkManagerMixinAccess chunkManager);
+
+    void fabric_per_player_spawns$incrementPlayerMobCount(ServerPlayerEntity playerEntity, SpawnGroup spawnGroup);
+
+    int fabric_per_player_spawns$isBelowChunkCap(SpawnGroup group, long chunkPosLong);
+
+    void fabric_per_player_spawns$setCurrentIterChunkPos(ChunkPos chunkPos);
 }

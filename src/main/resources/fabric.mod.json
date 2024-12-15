@@ -2,21 +2,19 @@
   "schemaVersion": 1,
   "id": "perplayerspawns",
   "version": "${version}",
-
-  "name": "Example Mod",
+  "name": "Per Player Spawns",
   "description": "per-player-spawns from Paper implemented as a Fabric mod",
   "authors": [
     "halfof2 <devan@cleverpath.com>",
     "unsupervised@tutanota.com",
-    "vlad2305m"
+    "vlad2305m",
+    "7410 - updated to 1.21.3"
   ],
   "contact": {
     "sources": "https://github.com/vlad2305m/fabric-per-player-spawns"
   },
-
   "license": "GPL",
   "icon": "assets/perplayerspawns/icon.png",
-
   "environment": "*",
   "entrypoints": {
     "main": []
@@ -24,9 +22,8 @@
   "mixins": [
     "perplayerspawns.mixins.json"
   ],
-
   "depends": {
-    "fabricloader": ">=0.14",
-    "minecraft": ">=1.20"
+    "fabricloader": ">=0.16.9",
+    "minecraft": ">=1.21.3"
   }
 }

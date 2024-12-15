@@ -2,12 +2,11 @@
   "required": true,
   "minVersion": "0.8.2",
   "package": "dev.lambdacraft.perplayerspawns.mixin",
-  "compatibilityLevel": "JAVA_16",
+  "compatibilityLevel": "JAVA_21",
   "mixins": [
     "ServerChunkManagerMixin",
-    "TACSMixin",
-    "InnerInfoMixin",
-    "SpawnHelperMixin"
+    "SpawnHelperInfoMixin",
+    "ServerChunkLoadingManagerAccessor"
   ],
   "client": [
   ],
